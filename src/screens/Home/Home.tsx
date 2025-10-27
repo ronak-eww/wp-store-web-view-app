@@ -31,28 +31,29 @@ const Home = () => {
   const [webViewVisible, setWebViewVisible] = useState<boolean>(false);
 
   useEffect(() => {
-    Linking.getInitialURL().then(url => {
-      if (url) {
-        if (url?.includes('kharidi360.com')) {
-          handleUrl();
-        }
-      } else {
-        setApiLoader(false);
-      }
-    });
+    handleUrl();
+    // Linking.getInitialURL().then(url => {
+    //   if (url) {
+    //     if (url?.includes('kharidi360.com')) {
+    //       handleUrl();
+    //     }
+    //   } else {
+    //     setApiLoader(false);
+    //   }
+    // });
 
-    const subscription = Linking.addEventListener('url', e => {
-      // Handle the URL
-      if (e?.url?.includes('kharidi360.com')) {
-        handleUrl();
-      } else {
-        setApiLoader(false);
-      }
-    });
+    // const subscription = Linking.addEventListener('url', e => {
+    //   // Handle the URL
+    //   if (e?.url?.includes('kharidi360.com')) {
+    //     handleUrl();
+    //   } else {
+    //     setApiLoader(false);
+    //   }
+    // });
 
-    return () => {
-      subscription.remove();
-    };
+    // return () => {
+    //   subscription.remove();
+    // };
   }, []);
 
   const handleUrl = async () => {
