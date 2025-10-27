@@ -1,0 +1,15 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.khardi360",
+      "sha256_cert_fingerprints": [
+        "AB:68:7C:58:C4:37:B4:D4:D1:98:B7:C0:AD:56:46:4A:9C:E8:A9:8B:E6:6D:04:EA:08:E6:90:D4:DC:EB:CC:C5"
+      ]
+    }
+  }
+]
+
+// https://khardi360.com/.well-known/assetlinks.json
+// content-type: application/json

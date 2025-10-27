@@ -31,8 +31,8 @@ local.properties
 *.iml
 *.hprof
 .cxx/
-*.keystore
-!debug.keystore
+*.aab
+*.apk
 .kotlin/
 
 # node.js
@@ -66,6 +66,14 @@ yarn-error.log
 # testing
 /coverage
 
+# env 
+.env
+.env_dev
+.env_prod
+
+# /yarn.lock
+/ios/Podfile.lock
+ 
 # Yarn
 .yarn/*
 !.yarn/patches
